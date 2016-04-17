@@ -1,3 +1,6 @@
 'use strict';
 
-module.exports = require('./lib/csjs');
+var csjs = require('./lib/csjs');
+csjs.prototype.unscoped = true;
+
+module.exports = csjs;
